@@ -9,7 +9,8 @@ const songListUiManager = new UIManager(".songs-list");
 
 
 //SongService.list(songs => {},  error => {});
-//Llamamos al método "list()" del objeto "songService" y le pasamos 2 funciones que gestionará el objeto en caso de éxito o error de la llamada Ajax.
+/*Llamamos al método "list()" del objeto "songService" y 
+le pasamos 2 funciones que gestionará el objeto en caso de éxito o error de la llamada Ajax.*/
 songService.list(
     songs => {
         //Comprobamos si hay canciones
