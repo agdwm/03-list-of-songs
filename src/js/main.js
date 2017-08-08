@@ -41,7 +41,7 @@ songService.list(
         songListUiManager.setError();
 
         //Hacemos log del error en la consola
-        console.log("ERROR al cargar las canciones :(", error);
+        console.log("ERROR al cargar las canciones. :(", error);
 });
 
 songService.getDetail(5);
