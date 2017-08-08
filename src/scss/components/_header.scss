@@ -1,0 +1,19 @@
+.web-header {
+    padding: 15px;
+    color: $color-silver;
+    text-align: center;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0; 
+    width: 100%;
+    background-color: fade-out($color-grastur, 0.15);
+    transition: background-color 0.5s;
+    &:hover {
+        background-color: $color-grastur;
+    }
+}
+.web-title {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: $font-size-large;
+}
