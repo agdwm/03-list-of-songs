@@ -2,10 +2,11 @@
 @import "reset";
 @import url('https://fonts.googleapis.com/css?family=Bree+Serif|Zilla+Slab');
 @import "variables";
-@import "_responsive_utils.scss";
+@import "responsive_utils.scss";
 @import "html-tags";
 
 //components
 @import "components/header";
 @import "components/container";
 @import "components/songs-list";
+@import "components/song-form";
