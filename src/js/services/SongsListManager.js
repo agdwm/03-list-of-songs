@@ -50,7 +50,6 @@ export default class SongsListManager {
                     <div class="title">${song.title}</div>
                 </article>`;
         }
-
         //Metemos el HTML en el div que contiene las canciones
         $(".songs-list .ui-status.ideal").html(html);
     }
