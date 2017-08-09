@@ -31,3 +31,9 @@ $mobile-landscape-width: 667px; //iphone6
 //$tablet-portrait-width: 768px; //ipad
 $tablet-portrait-width: $mobile-landscape-width + 1; //Desde 668px
 $tablet-landscape-width: 1024px; //ipad
+
+// Forms variables
+$form-input-border-color: $color-grastur;
+$form-input-outline-color: $color-grastur;
+$form-button-bg-color: $color-grastur;
+$form-button-font-color: $color-less-is-less;

@@ -3,4 +3,42 @@ body{
     font-family: $main-font-family;
     font-size: $font-size-base;
     color: $main-text-color;
+    padding-top: 60px;
+}
+
+form {
+    padding: 10px;
+}
+
+label, input, button {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+label {
+    font-size: $font-size-small;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+input {
+    margin: 5px 0 15px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid $form-input-border-color;
+    font-size: $font-size-base;
+    &:focus {
+        outline-color: $form-input-outline-color;
+    }
+}
+
+button {
+    @extend input;
+    background-color: $form-button-bg-color;
+    color: $color-less-is-less;
+    transition: background-color 0.25s;
+    &:hover, &:active {
+        background: lighten($form-button-bg-color, 15%);
+    }
 }
