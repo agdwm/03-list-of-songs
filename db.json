@@ -29,6 +29,66 @@
       "title": "You're in love with a psycho",
       "artist": "Kasabian",
       "cover_url": "http://obs.smehost.net/kasabiancouk-ukprod/wp-content/uploads/2017/03/KSBN-FCOL_STD-AlbumLAYERED_v3.5-768x768.jpg"
+    },
+    {
+      "artist": "Kings of Leon",
+      "title": "Walls",
+      "cover_url": "http://ksassets.timeincuk.net/wp/uploads/sites/55/2016/09/2016_KOLWALLSCover_Press_090916.jpg",
+      "id": 7
+    },
+    {
+      "artist": "The Strokes",
+      "title": "Reptilia",
+      "cover_url": "https://upload.wikimedia.org/wikipedia/en/8/81/The_Strokes_-_Reptilia_-_CD_single_cover.jpg",
+      "id": 8
+    },
+    {
+      "artist": "Placebo",
+      "title": "Collectors Edition",
+      "cover_url": "https://s-media-cache-ak0.pinimg.com/originals/c5/d9/2b/c5d92b9b45eafda1858b84e1e53944fd.jpg",
+      "id": 9
+    },
+    {
+      "artist": "Imagin Dragons",
+      "title": "Shots",
+      "cover_url": "",
+      "id": 10
+    },
+    {
+      "artist": "Kings of Leon",
+      "title": "Muchacho",
+      "cover_url": "",
+      "id": 11
+    },
+    {
+      "artist": "Joaquín Sabina",
+      "title": "19 días y 500 noches",
+      "cover_url": "",
+      "id": 12
+    },
+    {
+      "artist": "Bebe",
+      "title": "Cambio de piel",
+      "cover_url": "",
+      "id": 13
+    },
+    {
+      "artist": "Kings of Leon",
+      "title": "Muchacho",
+      "cover_url": "",
+      "id": 14
+    },
+    {
+      "artist": "BEBE ",
+      "title": "Mensenara",
+      "cover_url": "",
+      "id": 15
+    },
+    {
+      "artist": "BEBE",
+      "title": "Mensenara",
+      "cover_url": "",
+      "id": 16
     }
   ]
 }

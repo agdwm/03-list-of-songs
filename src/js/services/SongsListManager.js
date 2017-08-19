@@ -1,6 +1,7 @@
 //En este servicio no es necesario importar jQuery porque no se está utilizando
 //const $ = require("jquery");
 
+//SongsListManager SOLO recorre las canciones y las pinta
 export default class SongsListManager {
 
     constructor(songsService, songsListUIManager) {
@@ -40,7 +41,7 @@ export default class SongsListManager {
         this.songsService.getDetail(5);
     }
 
-    //renderSongs() pinta las canciones en el html
+    //renderSongs() PINTA las canciones en el html
     renderSongs(songs) {
         let html = "";
         for (let song of songs) {

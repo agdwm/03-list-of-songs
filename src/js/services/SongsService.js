@@ -3,6 +3,7 @@ De hecho Browserify solo va a importar jquery 1 vez
 Pero de este modo sabemos lo que significa "$" */
 const $ = require("jquery");
 
+//SongsService {} únicamente ENVIA y RECIBE datos, no hace nada con ellos
 export default class SongsService {
     
     constructor(url){

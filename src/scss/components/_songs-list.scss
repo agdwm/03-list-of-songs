@@ -30,8 +30,12 @@
         float: left;
         box-sizing: border-box; //solo resta paddings y border
         overflow: hidden;
+
         @include if-mobile-landscape {
-            width: calc(25% - 10px); // OJO! Con espacios, sino no funciona. (% 4 menos - margin)
+            width: calc(50% - 10px); // OJO! Con espacios, sino no funciona. (% 4 menos - margin)
+        }
+        @include if-tablet-portrait {
+            width: calc(25% - 10px);
         }
         @include if-desktop {
             width: calc(20% - 10px);
