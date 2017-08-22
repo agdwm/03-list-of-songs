@@ -1,17 +1,15 @@
 window.$ = window.jQuery = require("jquery"); //Hace jQuery accesible públicamente
 
 import SongsService from "./services/SongsService";
-import UIManager from "./services/UIManager";
 import SongsListManager from "./services/SongsListManager";
 import SongsFormManager from "./services/SongsFormManager";
 import PubSub from 'pubsub-js';
 
 const songsService = new SongsService("/songs/");
-const songsListUIManager = new UIManager(".songs-list");
 
 //PATRON DE INYECCIÓN DE DEPENDENCIAS
 //Al SongsListManager le inyectamos las clase "songsService" y "UIManager"
-const songsListManager = new SongsListManager(songsService, songsListUIManager, PubSub);
+const songsListManager = new SongsListManager(".songs-list",songsService, PubSub);
 songsListManager.init();
 //Al songsFormManager le inyectamos la clase "songsService"
 const songsFormManager = new SongsFormManager(".song-form", songsService, PubSub);

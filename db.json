@@ -61,12 +61,6 @@
       "id": 11
     },
     {
-      "artist": "Joaquín Sabina",
-      "title": "19 días y 500 noches",
-      "cover_url": "",
-      "id": 12
-    },
-    {
       "artist": "Bebe",
       "title": "Cambio de piel",
       "cover_url": "",
@@ -77,24 +71,6 @@
       "title": "Muchacho",
       "cover_url": "",
       "id": 14
-    },
-    {
-      "artist": "BEBE ",
-      "title": "Mensenara",
-      "cover_url": "",
-      "id": 15
-    },
-    {
-      "artist": "BEBE",
-      "title": "Mensenara",
-      "cover_url": "",
-      "id": 16
-    },
-    {
-      "artist": "Loquillo",
-      "title": "Feo, fuerte y formal",
-      "cover_url": "",
-      "id": 17
     },
     {
       "artist": "Andrés Calamaro",
@@ -115,18 +91,6 @@
       "id": 20
     },
     {
-      "artist": "Melendi",
-      "title": "sadfsdfasdf",
-      "cover_url": "",
-      "id": 21
-    },
-    {
-      "artist": "artista",
-      "title": "titulo de la cancion",
-      "cover_url": "",
-      "id": 22
-    },
-    {
       "artist": "JOnhy Cash",
       "title": "Hurt",
       "cover_url": "",
@@ -145,28 +109,10 @@
       "id": 25
     },
     {
-      "artist": "Jonhy Cash",
-      "title": "Hurt",
-      "cover_url": "https://upload.wikimedia.org/wikipedia/en/9/9c/Johnny_Cash_-_Personal_Jesus_and_Hurt_single.jpg",
-      "id": 26
-    },
-    {
       "artist": "Coldplay",
       "title": "Yellow",
       "cover_url": "https://i.ytimg.com/vi/zxtO1YJ9VUo/maxresdefault.jpg",
       "id": 27
-    },
-    {
-      "artist": "Kings of Leon",
-      "title": "Muchacho",
-      "cover_url": "",
-      "id": 28
-    },
-    {
-      "artist": "Kings of Leon",
-      "title": "Muchacho",
-      "cover_url": "",
-      "id": 29
     }
   ]
 }

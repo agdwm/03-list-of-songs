@@ -1,18 +1,26 @@
 //En este servicio no es necesario importar jQuery porque no se está utilizando
 //const $ = require("jquery");
+import UIManager from './UIManager';
 
 //SongsListManager SOLO recorre las canciones y las pinta
-export default class SongsListManager {
+export default class SongsListManager extends UIManager{
 
-    constructor(songsService, songsListUIManager, pubSub) {
+    constructor(elementSelector, songsService, pubSub) {
+        super(elementSelector); //llamamos al constructor de la clase UIManager
         this.songsService = songsService;
-        this.songsListUIManager = songsListUIManager;
         this.pubSub = pubSub;
     }
     //Cada método debería hacer solo una única cosa
     //init() sólo inicializa el componente
-    init() {
+    init(song) {
         this.loadSongs();
+        let self = this;
+        this.element.on("click", ".song", function(){
+            //this es el objeto nativo javascript
+            let $this = $(this);
+            let songId = $this.data("id");
+            self.deleteSong(songId);
+        });
         this.pubSub.subscribe("new-song", (topic, song) => {
             this.loadSongs();
         });
@@ -27,17 +35,17 @@ export default class SongsListManager {
                 //Comprobamos si hay canciones
                 if (songs.length == 0) {
                     //Mostramos el estado vacío
-                    this.songsListUIManager.setEmpty();
+                    this.setEmpty();
                 } else {
                     //Componemos el html con todas las canciones
                     this.renderSongs(songs);
                     //Quitamos el mensaje de cargando y mostramos la lista de canciones
-                    this.songsListUIManager.setIdeal();
+                    this.setIdeal();
                 }
             },
             error => {
                 //Mostramos el estado de error
-                this.songsListUIManager.setError();
+                this.setError();
                 //Hacemos log del error en la consola
                 console.log("ERROR al cargar las canciones. :(", error);
             });
@@ -52,7 +60,7 @@ export default class SongsListManager {
             html += this.renderSong(song)
         }
         //Metemos el HTML en el div que contiene las canciones
-        this.songsListUIManager.setIdealHtml(html);
+        this.setIdealHtml(html);
     }
     
     //renderiza una única canción
@@ -64,10 +72,20 @@ export default class SongsListManager {
             cover_url = "img/disk-150px.png";
             srcset = ' srcset="img/disk-150px.png 150w, img/disk-250px.png 250w, img/disk-300px.png 300w"';
         }
-        return `<article class="song">
+        return `<article class="song" data-id="${song.id}">
                     <img src="${song.cover_url}" alt="${song.artist} - ${song.title}" class="cover"${srcset}>
                     <div class="artist">${song.artist}</div>
                     <div class="title">${song.title}</div>
                 </article>`;
+    }
+
+    deleteSong(songId) {
+        this.setLoading();
+        this.songsService.delete(songId, success => {
+            //Cuando la canción se borra recargamos la lista
+            this.loadSongs();
+        }), error => {
+            this.setError();
+        }
     }
 }
