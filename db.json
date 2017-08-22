@@ -155,6 +155,18 @@
       "title": "Yellow",
       "cover_url": "https://i.ytimg.com/vi/zxtO1YJ9VUo/maxresdefault.jpg",
       "id": 27
+    },
+    {
+      "artist": "Kings of Leon",
+      "title": "Muchacho",
+      "cover_url": "",
+      "id": 28
+    },
+    {
+      "artist": "Kings of Leon",
+      "title": "Muchacho",
+      "cover_url": "",
+      "id": 29
     }
   ]
 }
