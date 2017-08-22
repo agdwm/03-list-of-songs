@@ -11,14 +11,16 @@ var gulp = require ("gulp"), //Importamos la librería en memoria
     uglify = require("gulp-uglify") //minificar javascript
     postcss = require("gulp-postcss"), //para que funcionen autoprefixer y cssnano
     autoprefixer = require("autoprefixer"), //crossbrowsing
-    cssnano = require("cssnano"); //minificar CSS
+    cssnano = require("cssnano"), //minificar CSS
+    imagenmin = require("gulp-imagemin"),
+    responsive = require("gulp-responsive");
 
 browserSync.create(); //Crea una instancia de browserSync
 
 //definimos la tarea por defecto --> comando: gulp o gulp default
 //Solo tenemos que ejecutar una vez este comando, 
 //a partir de ahora cada vez que guardemos automáticamente se compilará el archivo .scss*/
-gulp.task("default", ["html", "sass", "js"], function(){
+gulp.task("default", ["img", "html", "sass", "js"], function(){
     
     browserSync.init({
         //server: "./dist/",
@@ -91,3 +93,17 @@ gulp.task("js", function(){
     .pipe(browserSync.stream())
     .pipe(notify("JS Compilado"));
 })
+
+//Tarea que optimiza y crea las imágenes responsive
+gulp.task("img", function(){
+    gulp.src("src/img/*")
+        .pipe(imagemin()) // optimizamos el peso de las imágenes
+        .pipe(responsive({
+            '*.png': [
+                {width: 150, suffix: "150px"}, //mobile
+                {width: 250, suffix: "250px"}, //tablet
+                {width: 300, suffix: "300px"}  //desktop
+            ]
+        })) //generamos las versiones responsive
+        .pipe(gulp.dest("dist/img/"))
+});

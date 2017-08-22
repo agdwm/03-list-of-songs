@@ -4,14 +4,18 @@
 //SongsListManager SOLO recorre las canciones y las pinta
 export default class SongsListManager {
 
-    constructor(songsService, songsListUIManager) {
+    constructor(songsService, songsListUIManager, pubSub) {
         this.songsService = songsService;
         this.songsListUIManager = songsListUIManager;
+        this.pubSub = pubSub;
     }
     //Cada método debería hacer solo una única cosa
     //init() sólo inicializa el componente
     init() {
         this.loadSongs();
+        this.pubSub.subscribe("new-song", (topic, song) => {
+            this.loadSongs();
+        });
     }
     //loadSongs() solo carga las canciones
     loadSongs() {

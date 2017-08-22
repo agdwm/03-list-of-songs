@@ -89,6 +89,72 @@
       "title": "Mensenara",
       "cover_url": "",
       "id": 16
+    },
+    {
+      "artist": "Loquillo",
+      "title": "Feo, fuerte y formal",
+      "cover_url": "",
+      "id": 17
+    },
+    {
+      "artist": "Andrés Calamaro",
+      "title": "El salmón",
+      "cover_url": "",
+      "id": 18
+    },
+    {
+      "artist": "Julieta Venegas",
+      "title": "Limón y Sal",
+      "cover_url": "",
+      "id": 19
+    },
+    {
+      "artist": "asfasdf",
+      "title": "asdfasdf",
+      "cover_url": "",
+      "id": 20
+    },
+    {
+      "artist": "Melendi",
+      "title": "sadfsdfasdf",
+      "cover_url": "",
+      "id": 21
+    },
+    {
+      "artist": "artista",
+      "title": "titulo de la cancion",
+      "cover_url": "",
+      "id": 22
+    },
+    {
+      "artist": "JOnhy Cash",
+      "title": "Hurt",
+      "cover_url": "",
+      "id": 23
+    },
+    {
+      "artist": "Bloc Party",
+      "title": "Flux",
+      "cover_url": "https://images.genius.com/196b58f27c6112cb3afc4a9c90fada8a.1000x1000x1.jpg",
+      "id": 24
+    },
+    {
+      "artist": "La cabra mecánica",
+      "title": "Ni jaulas, ni peceras",
+      "cover_url": "http://www.elalmanaque.com/musica/musicos/cabra.jpg",
+      "id": 25
+    },
+    {
+      "artist": "Jonhy Cash",
+      "title": "Hurt",
+      "cover_url": "https://upload.wikimedia.org/wikipedia/en/9/9c/Johnny_Cash_-_Personal_Jesus_and_Hurt_single.jpg",
+      "id": 26
+    },
+    {
+      "artist": "Coldplay",
+      "title": "Yellow",
+      "cover_url": "https://i.ytimg.com/vi/zxtO1YJ9VUo/maxresdefault.jpg",
+      "id": 27
     }
   ]
 }

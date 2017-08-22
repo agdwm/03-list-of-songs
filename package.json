@@ -19,8 +19,10 @@
     "gulp-buffer": "0.0.2",
     "gulp-html-import": "0.0.2",
     "gulp-htmlmin": "^3.0.0",
+    "gulp-imagemin": "^3.3.0",
     "gulp-notify": "^3.0.0",
     "gulp-postcss": "^7.0.0",
+    "gulp-responsive": "^2.8.0",
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.6.0",
     "gulp-tap": "^1.0.1",
@@ -31,7 +33,8 @@
   },
   "dependencies": {
     "gulp": "^3.9.1",
-    "jquery": "^3.2.1"
+    "jquery": "^3.2.1",
+    "pubsub-js": "^1.5.7"
   },
   "keywords": [],
   "description": ""
