@@ -1,19 +1,19 @@
-var gulp = require ("gulp"), //Importamos la librería en memoria
-    sass = require ("gulp-sass"), //Nombre del paquete Sass descargado con Npm
-    notify = require ("gulp-notify"), //Notificaciones en el escritorio en lugar de en la consola
-    browserSync = require("browser-sync"), //liveReload y sincronización entre navegadores
-    gulpImport = require("gulp-html-import"), //permite utilizar la directiva @import similar al @include de PHP
-    tap = require("gulp-tap"), 
-    browserify = require("browserify"), //permite utilizar "@require" en archivos js para importar librerias descargadas con "npm"
-    buffer = require("gulp-buffer"), 
-    sourcemaps = require("gulp-sourcemaps"), //debug js y css .maps
-    htmlmin = require("gulp-htmlmin") //minificar html
-    uglify = require("gulp-uglify") //minificar javascript
-    postcss = require("gulp-postcss"), //para que funcionen autoprefixer y cssnano
-    autoprefixer = require("autoprefixer"), //crossbrowsing
-    cssnano = require("cssnano"), //minificar CSS
-    imagemin = require("gulp-imagemin"),
-    responsive = require("gulp-responsive");
+var gulp = require("gulp"); //Importamos la librería en memoria
+var sass = require("gulp-sass");//Nombre del paquete Sass descargado con Npm
+var notify = require("gulp-notify"); //Notificaciones en el escritorio en lugar de en la consola
+var browserSync = require("browser-sync");//liveReload y sincronización entre navegadores
+var gulpImport = require("gulp-html-import"); //permite utilizar la directiva @import similar al @include de PHP
+var tap = require("gulp-tap"); 
+var browserify = require("browserify"); //permite utilizar "@require" en archivos js para importar librerias descargadas con "npm"
+var buffer = require("gulp-buffer"); 
+var sourcemaps = require("gulp-sourcemaps"); //debug js y css .maps
+var htmlmin = require("gulp-htmlmin"); //minificar html
+var uglify = require("gulp-uglify"); //minificar javascript
+var postcss = require("gulp-postcss"); //para que funcionen autoprefixer y cssnano
+var autoprefixer = require("autoprefixer"); //crossbrowsing
+var cssnano = require("cssnano"); //minificar CSS
+var imagemin = require("gulp-imagemin");
+var responsive = require("gulp-responsive");
 
 browserSync.create(); //Crea una instancia de browserSync
 
